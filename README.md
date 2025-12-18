@@ -1,5 +1,10 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## 📋 開発ルール
+
+- [ブランチルール](./docs/BRANCH_RULES.md)
+- [コミットメッセージルール](./docs/COMMIT_RULES.md)
+
 ## Getting Started
 
 First, run the development server:
