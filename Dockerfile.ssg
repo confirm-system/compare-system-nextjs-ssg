@@ -11,7 +11,9 @@ RUN if [ -f package-lock.json ]; then npm ci; else npm install; fi
 # アプリケーションコードをコピー
 COPY . .
 
-# SSGモードでビルド（next.config.tsでbasePathを設定済み）
+# SSGモードでビルド（環境変数でbasePathを設定）
+ENV NEXT_OUTPUT=export
+ENV NEXT_BASE_PATH=/next-ssg
 RUN npm run build
 
 # 静的ファイルサーバーをインストール
